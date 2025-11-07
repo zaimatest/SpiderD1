@@ -110,7 +110,7 @@ def save_latest_domain(final_domain: str, config_path: str):
     print(f"已将最新域名 {final_domain} 保存到 {config_path}")
 
 
-def updata_domain(_env_path="../conf/config.ini", _config_path="../.env"):
+def updata_domain(_config_path="../conf/config.ini", _env_path="../.env"):
     # Step 1: 获取当前域名
     current_domain = get_current_domain(_config_path, _env_path)
     print(f"当前域名: {current_domain}")
